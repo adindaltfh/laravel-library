@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\JabatanController;
+use App\Http\Controllers\PendidikanController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,20 +21,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-Route::get('/main', function () {
-    return view('testing');
-})->name('main');
-
-Route::get('/jabatan', function () {
-    return view('jabatan');
-})->name('jabatan');
-
-Route::get('/pegawai', function () {
-    return view('pegawai');
-})->name('pegawai');
-
-Route::get('/pendidikan', function () {
-    return view('pendidikan');
-})->name('pendidikan');
+Route::get('/main', [HomeController::class, 'index'])->name('main');
+Route::get('/pegawai', [PegawaiController::class, 'index'])->name('pegawai');
+Route::get('/jabatan', [JabatanController::class, 'index'])->name('jabatan');
+Route::get('/pendidikan', [PendidikanController::class, 'index'])->name('pendidikan');
 
