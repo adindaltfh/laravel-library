@@ -1,5 +1,3 @@
-MAIN
-
 <!--
 =========================================================
 * Argon Dashboard 2 - v2.0.4
@@ -23,13 +21,20 @@ MAIN
     <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="./assets/img/favicon.png">
     <title>
-        Argon Dashboard 2 by Creative Tim
+        Sistem Informasi Kepegawaian Sederhana
     </title>
     @include('layout.partial.link')
 </head>
 
-<body class="g-sidenav-show   bg-gray-100">
+@if(Route::is('pegawai'))
+    <body class="g-sidenav-show bg-gray-100">
+        <div class="position-absolute w-100 min-height-300 top-0" style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/profile-layout-header.jpg'); background-position-y: 50%;">
+            <span class="mask bg-primary opacity-6"></span>
+        </div>
+@else
+    <body class="g-sidenav-show bg-gray-100">
     <div class="min-height-300 bg-primary position-absolute w-100"></div>
+@endif
     @include('layout.partial.header')
         @yield('content')
     @include('layout.partial.footer')
