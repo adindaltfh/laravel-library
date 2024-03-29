@@ -3,8 +3,8 @@
     <div class="container-fluid py-4">
     <div class="card w-full px-6 mx-auto max-w-screen-2xl rounded-xl" style="margin-top: 30px;">
     <h3 style="margin-top: 20px; margin-left:1%; text-align:center;">Kategori Jabatan Antar Departemen</h3>
-                  <div class="flex flex-wrap mt-0 -mx-3" style="margin-left: 7%;">
-                  <div class="flex-none w-1/4 max-w-full py-4 pl-0 pr-3 mt-0">
+    <div class="flex flex-wrap mt-0 -mx-3" style="margin-left: 7%;">
+    <div class="flex-none w-1/4 max-w-full py-4 pl-0 pr-3 mt-0">
     <div class="flex items-center mb-2">
         <div class="w-11 h-11 mr-7 flex items-center justify-center text-center bg-center rounded fill-current shadow-soft-2xl bg-gradient-to-tl from-purple-700 to-pink-500 text-neutral-900" style="width: 55px; height:55px;">
             <svg width="45px" height="45px" viewBox="-20 -20 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
