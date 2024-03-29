@@ -154,7 +154,7 @@
                                 </div>
                             </div>
                         <div class="carousel-item h-100" style="background-image: url('./assets/img/carousel-2.jpg');
-                        background-size: cover;">
+        background-size: cover;">
                                 <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
                                     <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
                                         <i class="ni ni-bulb-61 text-dark opacity-10"></i>
