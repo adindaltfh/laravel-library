@@ -24,6 +24,7 @@
         Sistem Informasi Kepegawaian Sederhana
     </title>
     @include('layout.partial.link')
+    
 </head>
 
 @if(Route::is('pegawai'))

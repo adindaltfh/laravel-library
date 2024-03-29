@@ -2,8 +2,8 @@
 @section('content')
     <div class="container-fluid py-4">
     <div class="card w-full px-6 mx-auto max-w-screen-2xl rounded-xl" style="margin-top: 30px;">
-    <h3 style="margin-top: 20px; margin-left:-20px; text-align:center;">Kategori Jabatan Antar Departemen</h3>
-                  <div class="flex flex-wrap mt-0 -mx-3" style="margin-left: 50px;">
+    <h3 style="margin-top: 20px; margin-left:1%; text-align:center;">Kategori Jabatan Antar Departemen</h3>
+                  <div class="flex flex-wrap mt-0 -mx-3" style="margin-left: 7%;">
                   <div class="flex-none w-1/4 max-w-full py-4 pl-0 pr-3 mt-0">
     <div class="flex items-center mb-2">
         <div class="w-11 h-11 mr-7 flex items-center justify-center text-center bg-center rounded fill-current shadow-soft-2xl bg-gradient-to-tl from-purple-700 to-pink-500 text-neutral-900" style="width: 55px; height:55px;">
@@ -78,7 +78,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="flex-none w-1/4 max-w-full py-4 pl-0 pr-3 mt-0">
+                    <div class="flex-none w-1/4 max-w-full py-4 pl-0 pr-3 mt-0" >
                     <div class="flex items-center mb-2">
                         <div class="flex items-center justify-center w-11 h-11 mr-2 text-center bg-center rounded fill-current shadow-soft-2xl bg-gradient-to-tl from-red-600 to-rose-400 text-neutral-900" style="width: 55px; height:55px;">
                         <svg width="45px" height="45px" viewBox="-20 -20 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -98,86 +98,68 @@
                         </div>
                         <div>
                         <p class="mt-1 mb-0 text-l font-semibold leading-tight">Kominfo</p>
-                      <h4 class="font-bold">9</h4>
+                      <h4 class="font-bold" id="scrollEdit">9</h4>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </div >
       <div class="container-fluid" style="margin-left:-10px; margin-bottom:20px; margin-top:20px;" id="formJabatan">
       <div class="row" style="width: 104%;">
           <div class="card">
             <div class="card-header pb-0">
               <div class="d-flex align-items-center">
-                <p class="mb-0">Edit Profile Pegawai</p>
+                <h5 class="mb-0">Form Data Jabatan</h5>
               </div>
             </div>
             <div class="card-body">
-      <p class="text-uppercase text-sm">Form Data Jabatan</p>
                 <form onsubmit="return validateForm()">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="nama" class="form-control-label">Nama</label>
-                                <input id="nama" class="form-control" type="text" value="Adinda Latifah">
+                                <input id="nama" class="form-control" type="text" placeholder="Masukkan Nama Pegawai">
                                 <small id="namaError" class="text-danger d-none">Nama tidak boleh kosong!</small>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="jabatan" class="form-control-label">Jabatan</label>
-                                <input id="jabatan" class="form-control" type="text" value="Lead Manager">
+                                <input id="jabatan" class="form-control" type="text" placeholder="Masukkan Jabatan">
                                 <small id="jabatanError" class="text-danger d-none">Jabatan tidak boleh kosong!</small>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="pendidikan" class="form-control-label">Pendidikan</label>
-                                <input id="pendidikan" class="form-control" type="text" value="University of Computer Science">
-                                <small id="pendidikanError" class="text-danger d-none">Pendidikan tidak boleh kosong!</small>
+                                <label for="Departemen" class="form-control-label">Departemen</label>
+                                <input id="Departemen" class="form-control" type="text" placeholder="Masukkan Nama Departemen">
+                                <small id="DepartemenError" class="text-danger d-none">Departemen tidak boleh kosong!</small>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="gaji" class="form-control-label">Gaji</label>
-                                <input id="gaji" class="form-control" type="text" value="IDR 1.000.000.000">
+                                <input id="gaji" class="form-control" type="text" placeholder="Masukkan Gaji Pegawai">
                                 <small id="gajiError" class="text-danger d-none">Gaji tidak boleh kosong!</small>
                             </div>
                         </div>
                     </div>
-                    <hr class="horizontal dark">
-                    <p class="text-uppercase text-sm">Contact Information</p>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="alamat" class="form-control-label">Alamat</label>
-                                <input id="alamat" class="form-control" type="text" value="Jalan Sungai Raya Dalam No. B4">
-                                <small id="alamatError" class="text-danger d-none">Alamat tidak boleh kosong!</small>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="kota" class="form-control-label">Kota</label>
-                                <input id="kota" class="form-control" type="text" value="Pontianak">
-                                <small id="kotaError" class="text-danger d-none">Kota tidak boleh kosong!</small>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="negara" class="form-control-label">Negara</label>
-                                <input id="negara" class="form-control" type="text" value="Indonesia">
-                                <small id="negaraError" class="text-danger d-none">Negara tidak boleh kosong!</small>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="kodePos" class="form-control-label">Kode Pos</label>
-                                <input id="kodePos" class="form-control" type="text" value="437300">
-                                <small id="kodePosError" class="text-danger d-none">Kode Pos tidak boleh kosong!</small>
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label class="form-control-label">Status Pegawai</label>
+                        <div class="radio-container" style="border: 1px solid #ccc; padding: 5px; width:100%; border-radius:10px; text-align:center;">
+                        <label class="radio" style="margin-right:80px; font-size:15px; font-weight: 600; margin-top:6px;">
+                            <input type="radio" name="status" value="aktif" style="margin-right:10px;"><span class="checkmark"></span>Aktif
+                        </label>
+                        <label class="radio" style="margin-right:80px; font-size:15px; font-weight: 600; margin-top:6px;">
+                            <input type="radio" name="status" value="non-aktif"><span class="checkmark" style="margin-right:10px;"></span>Non-Aktif
+                        </label>
+                        <label class="radio" style="margin-right:80px; font-size:15px; font-weight: 600; margin-top:6px;">
+                            <input type="radio" name="status" value="cuti"><span class="checkmark" style="margin-right:10px;"></span>Cuti
+                        </label>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="float: right;">Submit</button>
+                </div>
+
+                    <button type="submit" class="btn btn-primary" style="float: right; background-color:cornflowerblue; margin-top:10px;">Submit</button>
                 </form>
             </div>
           </div>
@@ -194,10 +176,10 @@
                 <table class="table align-items-center mb-0">
                   <thead>
                     <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Author</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Function</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Jabatan</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Employed</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Gaji</th>
                       <th class="text-secondary opacity-7"></th>
                     </tr>
                   </thead>
@@ -206,23 +188,23 @@
                       <td>
                         <div class="d-flex px-2 py-1">
                           <div>
-                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user1">
+                            <img src="{{ asset('assets/img/hee.png') }}" class="avatar avatar-sm me-3" alt="user1">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">John Michael</h6>
-                            <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
+                            <h6 class="mb-0 text-sm">Maheesa</h6>
+                            <p class="text-xs text-secondary mb-0">maheesaenhypen@gmail.com</p>
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p class="text-xs font-weight-bold mb-0">Manager</p>
-                        <p class="text-xs text-secondary mb-0">Organization</p>
+                        <p class="text-xs font-weight-bold mb-0">Solution Manager</p>
+                        <p class="text-xs text-secondary mb-0">Dept. Pemasaran</p>
                       </td>
                       <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Online</span>
+                        <span class="badge badge-sm bg-gradient-success">Aktif</span>
                       </td>
                       <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
+                        <span class="text-secondary text-xs font-weight-bold">IDR 20.000.000</span>
                       </td>
                       <td class="align-middle">
                         <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user" onclick="editJabatan()">
@@ -234,23 +216,23 @@
                       <td>
                         <div class="d-flex px-2 py-1">
                           <div>
-                            <img src="../assets/img/team-3.jpg" class="avatar avatar-sm me-3" alt="user2">
+                            <img src="{{ asset('assets/img/jay.jpeg') }}" class="avatar avatar-sm me-3" alt="user2">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Alexa Liras</h6>
-                            <p class="text-xs text-secondary mb-0">alexa@creative-tim.com</p>
+                            <h6 class="mb-0 text-sm">Jaden</h6>
+                            <p class="text-xs text-secondary mb-0">jadenenhypen@gmail.com</p>
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p class="text-xs font-weight-bold mb-0">Programator</p>
-                        <p class="text-xs text-secondary mb-0">Developer</p>
+                        <p class="text-xs font-weight-bold mb-0">Programmer</p>
+                        <p class="text-xs text-secondary mb-0">Dept. Kominfo</p>
                       </td>
                       <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-secondary">Offline</span>
+                        <span class="badge badge-sm bg-gradient-secondary">Cuti</span>
                       </td>
                       <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">11/01/19</span>
+                        <span class="text-secondary text-xs font-weight-bold">IDR 24.000.000</span>
                       </td>
                       <td class="align-middle">
                         <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user" onclick="editJabatan()">
@@ -262,23 +244,23 @@
                       <td>
                         <div class="d-flex px-2 py-1">
                           <div>
-                            <img src="../assets/img/team-4.jpg" class="avatar avatar-sm me-3" alt="user3">
+                            <img src="{{ asset('assets/img/jake.jpeg') }}" class="avatar avatar-sm me-3" alt="user3">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Laurent Perrier</h6>
-                            <p class="text-xs text-secondary mb-0">laurent@creative-tim.com</p>
+                            <h6 class="mb-0 text-sm">Jakki</h6>
+                            <p class="text-xs text-secondary mb-0">jakkienhypen@gmail.com</p>
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p class="text-xs font-weight-bold mb-0">Executive</p>
-                        <p class="text-xs text-secondary mb-0">Projects</p>
+                        <p class="text-xs font-weight-bold mb-0">Administrasi Officer</p>
+                        <p class="text-xs text-secondary mb-0">Dept. Administrasi</p>
                       </td>
                       <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Online</span>
+                        <span class="badge badge-sm bg-gradient-success">Aktif</span>
                       </td>
                       <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">19/09/17</span>
+                        <span class="text-secondary text-xs font-weight-bold">IDR 12.000.000</span>
                       </td>
                       <td class="align-middle">
                         <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user" onclick="editJabatan()">
@@ -290,23 +272,23 @@
                       <td>
                         <div class="d-flex px-2 py-1">
                           <div>
-                            <img src="../assets/img/team-3.jpg" class="avatar avatar-sm me-3" alt="user4">
+                            <img src="{{ asset('assets/img/sungh.jpeg') }}" class="avatar avatar-sm me-3" alt="user4">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Michael Levi</h6>
-                            <p class="text-xs text-secondary mb-0">michael@creative-tim.com</p>
+                            <h6 class="mb-0 text-sm">Satria</h6>
+                            <p class="text-xs text-secondary mb-0">satriaenhypen@gmail.com</p>
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p class="text-xs font-weight-bold mb-0">Programator</p>
-                        <p class="text-xs text-secondary mb-0">Developer</p>
+                        <p class="text-xs font-weight-bold mb-0">Advertising Executive</p>
+                        <p class="text-xs text-secondary mb-0">Dept. Marketing</p>
                       </td>
                       <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Online</span>
+                        <span class="badge badge-sm bg-gradient-success">AKtif</span>
                       </td>
                       <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">24/12/08</span>
+                        <span class="text-secondary text-xs font-weight-bold">IDR 17.000.000</span>
                       </td>
                       <td class="align-middle">
                         <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user" onclick="editJabatan()">
@@ -318,23 +300,23 @@
                       <td>
                         <div class="d-flex px-2 py-1">
                           <div>
-                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user5">
+                            <img src="{{ asset('assets/img/suno.jpeg') }}" class="avatar avatar-sm me-3" alt="user5">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Richard Gran</h6>
-                            <p class="text-xs text-secondary mb-0">richard@creative-tim.com</p>
+                            <h6 class="mb-0 text-sm">Sena</h6>
+                            <p class="text-xs text-secondary mb-0">senaenhypen@gmail.com</p>
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p class="text-xs font-weight-bold mb-0">Manager</p>
-                        <p class="text-xs text-secondary mb-0">Executive</p>
+                        <p class="text-xs font-weight-bold mb-0">Financial Analyst</p>
+                        <p class="text-xs text-secondary mb-0">Dept. Keuangan</p>
                       </td>
                       <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-secondary">Offline</span>
+                        <span class="badge badge-sm bg-gradient-danger">Non-Aktif</span>
                       </td>
                       <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">04/10/21</span>
+                        <span class="text-secondary text-xs font-weight-bold">IDR 22.000.000</span>
                       </td>
                       <td class="align-middle">
                         <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user" onclick="editJabatan()">
@@ -346,23 +328,51 @@
                       <td>
                         <div class="d-flex px-2 py-1">
                           <div>
-                            <img src="../assets/img/team-4.jpg" class="avatar avatar-sm me-3" alt="user6">
+                            <img src="{{ asset('assets/img/uwon.jpeg') }}" class="avatar avatar-sm me-3" alt="user6">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Miriam Eric</h6>
-                            <p class="text-xs text-secondary mb-0">miriam@creative-tim.com</p>
+                            <h6 class="mb-0 text-sm">Juna</h6>
+                            <p class="text-xs text-secondary mb-0">junaenhypen@gmail.com</p>
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p class="text-xs font-weight-bold mb-0">Programtor</p>
-                        <p class="text-xs text-secondary mb-0">Developer</p>
+                        <p class="text-xs font-weight-bold mb-0">Public Relations Coor.</p>
+                        <p class="text-xs text-secondary mb-0">Dept. Kominfo</p>
                       </td>
                       <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-secondary">Offline</span>
+                        <span class="badge badge-sm bg-gradient-secondary">Cuti</span>
                       </td>
                       <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
+                        <span class="text-secondary text-xs font-weight-bold">IDR 14.000.000</span>
+                      </td>
+                      <td class="align-middle">
+                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user" onclick="editJabatan()">
+                          Edit
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="{{ asset('assets/img/riki.jpeg') }}" class="avatar avatar-sm me-3" alt="user6">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">Riki</h6>
+                            <p class="text-xs text-secondary mb-0">rikienhypen@gmail.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">Digital Media Manager</p>
+                        <p class="text-xs text-secondary mb-0">Dept. Kominfo</p>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <span class="badge badge-sm bg-gradient-success">Aktif</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">IDR 18.000.000</span>
                       </td>
                       <td class="align-middle">
                         <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user" onclick="editJabatan()">
@@ -411,7 +421,7 @@
     </div>
                 <script>
    function editJabatan() {
-            var formElement = document.getElementById('formJabatan');
+            var formElement = document.getElementById('scrollEdit');
             var position = formElement.offsetTop;
             window.scrollTo({
                 top: position,
@@ -419,47 +429,52 @@
                 });
         }
     function validateForm() {
-        var nama = document.getElementById('nama').value;
-        var jabatan = document.getElementById('jabatan').value;
-        var pendidikan = document.getElementById('pendidikan').value;
-        var gaji = document.getElementById('gaji').value;
-        var alamat = document.getElementById('alamat').value;
-        var kota = document.getElementById('kota').value;
-        var negara = document.getElementById('negara').value;
-        var kodePos = document.getElementById('kodePos').value;
+        // Mengambil nilai dari setiap input
+        var nama = document.getElementById("nama").value;
+        var jabatan = document.getElementById("jabatan").value;
+        var departemen = document.getElementById("Departemen").value;
+        var gaji = document.getElementById("gaji").value;
 
-        if (nama.trim() === '') {
-            document.getElementById('namaError').classList.remove('d-none');
-            return false;
+        // Validasi setiap input
+        if (nama === "") {
+            // Menampilkan pesan error jika input nama kosong
+            document.getElementById("namaError").classList.remove("d-none");
+            return false; // Mencegah pengiriman formulir
+        } else {
+            // Menghilangkan pesan error jika input nama diisi
+            document.getElementById("namaError").classList.add("d-none");
         }
-        if (jabatan.trim() === '') {
-            document.getElementById('jabatanError').classList.remove('d-none');
-            return false;
+
+        if (jabatan === "") {
+            // Menampilkan pesan error jika input jabatan kosong
+            document.getElementById("jabatanError").classList.remove("d-none");
+            return false; // Mencegah pengiriman formulir
+        } else {
+            // Menghilangkan pesan error jika input jabatan diisi
+            document.getElementById("jabatanError").classList.add("d-none");
         }
-        if (pendidikan.trim() === '') {
-            document.getElementById('pendidikanError').classList.remove('d-none');
-            return false;
+
+        if (departemen === "") {
+            // Menampilkan pesan error jika input departemen kosong
+            document.getElementById("DepartemenError").classList.remove("d-none");
+            return false; // Mencegah pengiriman formulir
+        } else {
+            // Menghilangkan pesan error jika input departemen diisi
+            document.getElementById("DepartemenError").classList.add("d-none");
         }
-        if (gaji.trim() === '') {
-            document.getElementById('gajiError').classList.remove('d-none');
-            return false;
+
+        if (gaji === "") {
+            // Menampilkan pesan error jika input gaji kosong
+            document.getElementById("gajiError").classList.remove("d-none");
+            return false; // Mencegah pengiriman formulir
+        } else {
+            // Menghilangkan pesan error jika input gaji diisi
+            document.getElementById("gajiError").classList.add("d-none");
         }
-        if (alamat.trim() === '') {
-            document.getElementById('alamatError').classList.remove('d-none');
-            return false;
-        }
-        if (kota.trim() === '') {
-            document.getElementById('kotaError').classList.remove('d-none');
-            return false;
-        }
-        if (negara.trim() === '') {
-            document.getElementById('negaraError').classList.remove('d-none');
-            return false;
-        }
-        if (kodePos.trim() === '') {
-            document.getElementById('kodePosError').classList.remove('d-none');
-            return false;
-        }        
-    };
+
+        // Mengembalikan true jika semua input telah diisi
+        return true;
+    }
 </script>
+
 @endsection

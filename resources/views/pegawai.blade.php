@@ -51,7 +51,7 @@
           <div class="card">
             <div class="card-header pb-0">
               <div class="d-flex align-items-center">
-                <p class="mb-0">Edit Profile Pegawai</p>
+                <h5 class="mb-0">Edit Profile Pegawai</h5>
                 <button class="btn btn-primary btn-sm ms-auto">Settings</button>
               </div>
             </div>
@@ -120,7 +120,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="float: right;">Submit</button>
+                    <button type="submit" class="btn btn-primary" style="float: right; background-color:cornflowerblue;">Submit</button>
                 </form>
 
 <script>
